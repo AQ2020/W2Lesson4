@@ -1,0 +1,55 @@
+h1 {
+    color: aqua;
+}
+
+#masterDiv {
+    display: flex;
+}
+
+.innerDiv {
+    flex-grow: 1;
+    background-color: rgb(136, 127, 255);
+}
+
+/* !IMPORTANT: inline style >> id >> class >> tag */ 
+.innerDiv p {
+    background-color: blue;
+}
+
+div>ul {
+    background-color: crimson;
+}
+
+p~p {
+    background-color: chartreuse;
+}
+/* p+p -> both paragraphs will get the same style*/
+
+[title~=test] {
+    background: red;
+}
+
+[title=test] {
+    background: yellow;
+}
+[title=number] {
+    border: 5px solid red;
+    background: rebeccapurple;
+}
+
+[title=text] {
+    border: 1px solid green;
+    background: silver;
+}
+
+a {
+    color: hotpink;
+}
+
+[href^=https] {
+    color: greenyellow;
+}
+
+[href$=pdf] {
+    font-size: 2em;
+}
