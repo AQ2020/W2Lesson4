@@ -46,10 +46,59 @@ a {
     color: hotpink;
 }
 
+[href~=strive] {
+    color: green;
+}
+
 [href^=https] {
-    color: greenyellow;
+    color: orange;
 }
 
 [href$=pdf] {
     font-size: 2em;
+    color: indigo;
+}
+
+[alt~=google] {
+    font-weight: bolder;
+}
+
+[src$=png] {
+    background: palegreen;
+}
+
+ul:first-child {
+    border-top: 1px solid gray;
+    border-radius: 15px;
+}
+
+ul:last-child {
+    border-bottom: 1px solid gray;
+    border-radius: 15px;
+}
+li:nth-child(2n) {
+    background: khaki;
+}
+li:nth-child(2n+1) {
+    background: white;
+}
+
+li::after{
+    content: "<";
+    border-right: 1px solid red;
+    display: none;  
+}
+li:hover::after{
+    display: inline;
+}
+.innerDiv:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+input[type=text]:focus{
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;  
+}
+
 }
