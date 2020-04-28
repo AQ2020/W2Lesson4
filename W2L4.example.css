@@ -101,4 +101,12 @@ input[type=text]:focus{
     box-shadow: 5px 5px 15px 5px #000000;  
 }
 
+input[type=number]:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;  
+}
+
+input[type=file]:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;  
 }
