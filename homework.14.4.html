@@ -34,15 +34,28 @@
             border: solid seagreen;
         }
 
-        #col1 {}
+        .container2 {
+            background: seagreen;
+            border: solid black;
+        }
 
-        #col2 {}
+        .row1 {
+            display: flex;
+        }
 
-        #col3 {}
+        .row2 .col-md-3 {
+            display: inline-block;
+            vertical-align: middle;
+            float: none;
+        }
 
-        #col4 {}
+        #col2 {
+            text-align: center;
+        }
 
-        .row {}
+        #col3 {
+            text-align: center;
+        }
 
         img {
             width: 100%;
@@ -57,6 +70,17 @@
             font-size: 1rem;
             color: darkslategray;
         }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                margin-left: 4%;
+                margin-right: 3%;
+                margin-top: 2%;
+                margin-bottom: 1%;
+            }
+        }
     </style>
 </head>
 
@@ -69,7 +93,7 @@
             beloved anti-heroine.</p>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row1">
             <div class="col-3">
                 <div class="thumbnail">
                     <a href="https://www.imdb.com/title/tt0116191/?ref_=nv_sr_srsg_0" target="_blank">
@@ -110,6 +134,34 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div>
+        <p>A list of Jane austen adaptations - from best to worst!</p>
+    </div>
+    <div class="row2">
+        <div class="col2 col-md-3">
+            <p>Best</p>
+            <ol>
+                <li>Sense & Sensibility</li>
+                <li>Love & Friendship</li>
+                <li>Pride & Prejudice</li>
+                <li>Emma</li>
+                <li>Bridget Jones' Diary</li>
+                <li>Clueless</li>
+            </ol>
+        </div>
+        <div class="col3 col-md-3">
+            <p>Worst</p>
+            <ol>
+                <li>Mansfield Park</li>
+                <li>Persuasion</li>
+                <li>Northanger Abbey</li>
+                <li>Lost in Austen</li>
+                <li>Bride & Prejudice</li>
+                <li>Pride & Prejudice & Zombies</li>
+            </ol>
         </div>
     </div>
 
