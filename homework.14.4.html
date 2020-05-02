@@ -40,35 +40,28 @@
             border: solid seagreen;
         }
 
-        .container2 {
-            background: seagreen;
-            border: solid black;
-        }
 
-        .row1 {
+        .row {
             display: flex;
-        }
-
-        .row1:hover>p {
-            display:block;
-        }
-
-        .row2 .col-md-3 {
-            display: inline-block;
-            vertical-align: middle;
-            float: none;
-        }
-
-        #col2 {
             text-align: center;
         }
 
-        #col3 {
+        h2 {
             text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
         }
+
 
         img {
-            width: 100%;
+            max-width: 100%;
+        }
+
+        .list-img {
+            max-width: 50%;
+            border-top-left-radius: calc(.25rem - 1px);
+            border-top-right-radius: calc(.25rem - 1px);
         }
 
         p {
@@ -82,7 +75,7 @@
         }
 
         /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 400px) {
             .column {
                 width: 100%;
                 margin-left: 4%;
@@ -97,14 +90,13 @@
 <body>
     <h1>The Many Faces of Austen's Emma</h1>
     <div>
-        <p>
-            Jane Austen's beloved novels have been the subject of countless adaptations.</p>
+        <p>Jane Austen's beloved novels have been the subject of countless adaptations.</p>
         <p>The latest adaption of "Emma" is just the newest in a long line of films and mini-series based on Austen's
             beloved anti-heroine.</p>
     </div>
     <div class="container">
-        <div class="row1">
-            <div class="col-3">
+        <div class="row">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-6">
                 <div class="thumbnail">
                     <a href="https://www.imdb.com/title/tt0116191/?ref_=nv_sr_srsg_0" target="_blank">
                         <img src="Emma1996.jpg" alt="Emma 1996" style="width:100%">
@@ -114,7 +106,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-6">
                 <div class="thumbnail">
                     <a href="https://www.imdb.com/title/tt0118308/?ref_=nm_flmg_act_40" target="_blank">
                         <img src="KateB.jpg" alt="Emma tv movie" style="width:100%">
@@ -124,7 +116,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-6">
                 <div class="thumbnail">
                     <a href="https://www.imdb.com/title/tt1366312/?ref_=nm_flmg_act_20" target="_blank">
                         <img src="Romola.jpg" alt="Romola Garai" style="width:100%">
@@ -134,7 +126,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-6">
                 <div class="thumbnail">
                     <a href="https://www.imdb.com/title/tt9214832/?ref_=nv_sr_srsg_0" target="_blank">
                         <img src="emma-2020.jpg" alt="Emma 2020" style="width:100%">
@@ -148,30 +140,58 @@
     </div>
 
     <div>
-        <p>A list of Jane austen adaptations - from best to worst!</p>
-    </div>
-    <div class="row2">
-        <div class="col2 col-md-2">
-            <p>Best</p>
-            <ol>
-                <li>Sense & Sensibility</li>
-                <li>Love & Friendship</li>
-                <li>Pride & Prejudice</li>
-                <li>Emma</li>
-                <li>Bridget Jones' Diary</li>
-                <li>Clueless</li>
-            </ol>
-        </div>
-        <div class="col3 col-md-2">
-            <p>Worst</p>
-            <ol>
-                <li>Mansfield Park</li>
-                <li>Persuasion</li>
-                <li>Northanger Abbey</li>
-                <li>Lost in Austen</li>
-                <li>Bride & Prejudice</li>
-                <li>Pride & Prejudice & Zombies</li>
-            </ol>
+        <h2>A list of Jane Austen adaptations - from best to worst!</h2>
+        <div class="container">
+        <div class="row">
+                <div class="col-6">
+                    <p>1.Sense & Sensibility</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>2.Love & Friendship</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>3.Pride & Prejudice</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>4.Emma</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>5.Bridget Jones' Diary</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>6.Clueless</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>7.Mansfield Park</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>8.Persuasion</p>
+                    <img class="list-img" src="KateB.jpg">
+                    </div>
+                <div class="col-6">
+                    <p>9.Northanger Abbey</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>10.Lost in Austen</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>11.Bride & Prejudice</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+                <div class="col-6">
+                    <p>12.Pride & Prejudice & Zombies</p>
+                    <img class="list-img" src="KateB.jpg">
+                </div>
+            </div>
         </div>
     </div>
 
