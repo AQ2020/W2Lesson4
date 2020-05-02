@@ -12,7 +12,7 @@
 
     <title>Jane Austen's Emma</title>
     <style>
-        @media (min-width: 500px) {
+        @media (min-width: 578px) {
             h1 {
                 color: darkmagenta;
                 font-family: cursive;
@@ -22,11 +22,17 @@
                 margin-right: 3%;
                 margin-top: 2%;
                 margin-bottom: 1%;
+                text-align: left;
             }
 
             body {
                 background: rgb(98, 199, 201);
             }
+        }
+
+        h1 {
+            text-align: center;
+            color: darkmagenta;
         }
 
         .container {
@@ -41,6 +47,10 @@
 
         .row1 {
             display: flex;
+        }
+
+        .row1:hover>p {
+            display:block;
         }
 
         .row2 .col-md-3 {
